@@ -1,0 +1,390 @@
+:root {
+    --grisClair-color:rgb(131, 131, 131);
+    --grisFonce-color:rgb(33, 32, 32);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--grisClair-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-input {
+    margin-top: 10%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+}
+.gauche {
+    width: 20%;
+    background-color: rgb(100, 100, 100);
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.quatre-boxs {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    width: 90%;
+    height: 30%;
+} 
+.boxonly {
+    width: 45%;
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+#input-search {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px ;
+}
+#select {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px ;
+    border-color: aliceblue;
+}
+.enseignant-gauche1
+{
+    background-color: salmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.en1 {
+    align-self: flex-start;
+    width: 40%;
+    height: 50%;
+    margin-left: 10%;
+    font-size: 2rem ;
+}
+.fa-solid {
+   background-color: aliceblue;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   padding-left: 5%;
+}
+
+.en2 {
+    width: 40%;
+    padding: 10% 20%;
+}
+.en3 {
+    padding-left:5%;
+    padding-top: 10%;
+}
+.en4 {
+    padding-right:  10%;
+    cursor: pointer;
+    font-size: 2.5rem;
+
+}
+.salle-gauche
+{
+    background-color: rgb(255, 25, 0);
+    display: flex   ;
+    
+}
+.enseignant-gauche,.salle-gauche {
+    align-items: flex-start      ;
+}
+.classe-gauche
+{
+    background-color: rgb(0, 255, 229);
+}
+.module-gauche
+{
+    background-color: rgb(114, 250, 162);
+}
+.module-gauche,.classe-gauche {
+    align-items: flex-end 
+} 
+.droite {
+    display: flex;
+    flex-direction: column;
+    gap: .7%;
+    background-color:rgb(33, 32, 32);
+    border-radius: 0 20px 20px 0;
+    width: 80%;
+    height: 100%;
+
+}
+.planning {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+#boutton {
+    width: 4%;
+    background-color: white;
+    height: 20%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    margin:0 5% 3%;   
+}
+#boutton1 {
+    content: "";
+    width: 25px;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    background-color: rgb(33, 32, 32);
+    height: 25px;
+    border-radius: 50%;
+    transform-origin: left;
+
+}
+
+
+.heure {
+    height: 3%;
+    background-color:  rgb(81, 81, 81);
+    border-radius: 10px;
+}
+.heure {
+    display: flex;
+    color: white;
+    justify-content:flex-start;
+    gap: 8%;
+    padding-left: 15%;
+}
+.lundi {
+    height: 12%;
+    display: flex;
+    gap: 0.2%;
+}
+.jourl{
+    display: flex;
+    align-items: center;
+    padding-left: .5%;
+    width: 15%;
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px 0 0 20px;
+    border: solid rgb(131, 131, 131) .1px;
+}
+.courl {
+    width: 85%;
+    background-color:slategrey;
+    border-radius: 0 20px 20px 0;
+}
+.mardi {
+    height: 12%;
+    display: flex;
+}
+.jourma {
+    display: flex;
+    align-items: center;
+    padding-left: .5%;
+    width: 15%;
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px 0 0 20px;
+    border: solid rgb(131, 131, 131) .1px;
+}
+.courma {
+    width: 85%;
+    background-color:slategrey;
+    border-radius: 0 20px 20px 0;
+}
+.mercredi {
+    height: 12%;
+    display: flex;
+}
+.jourme {
+    display: flex;
+    align-items: center;
+    padding-left: .5%;
+    width: 15%;
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px 0 0 20px;
+    border: solid rgb(131, 131, 131) .1px;
+}
+.courme {
+    width: 85%;
+    background-color:slategrey;
+    border-radius: 0 20px 20px 0;
+}
+.jeudi {
+    height: 12%;
+    display: flex;
+}
+.jourj{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: .5%;
+    width: 15%;
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px 0 0 20px;
+    border: solid rgb(131, 131, 131) .1px;
+}
+.courj {
+    width: 85%;
+    background-color:slategrey;
+    border-radius: 0 20px 20px 0;
+}
+.vendredi {
+    height: 12%;
+    display: flex;
+}
+.jourv{
+    display: flex;
+    align-items: center;
+    padding-left: .5%;
+    width: 15%;
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px 0 0 20px;
+    border: solid rgb(131, 131, 131) .1px;
+}
+.courv {
+    width: 85%;
+    background-color:slategrey;
+    border-radius: 0 20px 20px 0;
+}
+.samedi {
+    height: 12%;
+    display: flex;
+}
+.jours{
+    display: flex;
+    align-items: center;
+    padding-left: .5%;
+    width: 15%;
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px 0 0 20px;
+    border: solid rgb(131, 131, 131) .1px;
+}
+.cours {
+    width: 85%;
+    background-color:slategrey;
+    border-radius: 0 20px 20px 0;
+}
+.mesjours {
+    color: white;
+    text-transform: uppercase;
+}
+.jourEtPlus {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+.plus {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.lundi {
+    position: relative;
+}
+.modalTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -5%;
+    top: 10%;
+    width: 80%;
+    height: 200%;
+    background-color: rgb(9, 140, 255);
+}
+.repartitionClasse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    position: absolute;
+    width: 80%;
+    height: 300%;
+    color: black;
+
+}
+#module {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#enseignant {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+
+
+
+
+/* modal start */
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    visibility: hidden;
+    
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    width: 40%;
+    height: 50%;
+    background-color: darkgray;
+}
+.modal-header {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    color: aliceblue;
+} 
+.modal-main {
+    height: 60%;
+    width: 100%;
+    background-color: rgb(122, 122, 122);
+} 
+.modal-footer {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    flex-direction: row;
+} 
+.modal-main div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-modal {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+/* modal end */

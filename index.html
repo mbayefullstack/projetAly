@@ -1,0 +1,225 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="gauche">
+                <div id="div-input">
+                    <input type="text" id="input-search" value="Search"i>
+                </div>
+                <div class="quatre-boxs">
+                    <div class="enseignant-gauche1 boxonly" id="profs">
+                        <div class="en1"><i class="fa-solid fa-person-chalkboard"></i></div>
+                        <div class="en2"><p>6</p></div>
+                        <div class="en3"><p>Enseign.</p></div>
+                        <div class="en4"><p>+</p></div>
+                    </div>
+                    <div class="salle-gauche boxonly" id="salles">
+                        <div class="en1"><i class="fa-solid fa-house-user"></i></div>
+                        <div class="en2"><p>6</p></div>
+                        <div class="en3"><p>Salles.</p></div>
+                        <div class="en4"><p>+</p></div>
+                    </div>
+                    <div class="classe-gauche boxonly" id="classes">
+                        <div class="en1"><i class="fa-sharp fa-solid fa-people-group"></i></div>
+                        <div class="en2"><p>6</p></div>
+                        <div class="en3"><p>Classes.</p></div>
+                        <div class="en4"><p>+</p></div>
+                    </div>
+                    <div class="module-gauche boxonly" id="modules">
+                        <div class="en1"><i class="fa-solid fa-trash"></i></div>
+                        <div class="en2"><p>6</p></div>
+                        <div class="en3"><p>Modules.</p></div>
+                        <div class="en4"><p>+</p></div>
+                    </div>
+                </div>
+                <div class="div-select">
+                    <select id="select">
+
+                    </select>
+                </div>
+            </div>
+            <div class="droite">
+                <div class="planning">
+                    <div class="planningl2"><h2>Planning L2: CDSD</h2></div>
+                    <div id="boutton">
+                        <div id="boutton1"></div>
+                    </div>
+
+                </div>
+                <div class="heure">
+                    <h3>8h</h3>
+                    <h3>9h</h3>
+                    <h3>10h</h3>
+                    <h3>11h</h3>
+                    <h3>12h</h3>
+                    <h3>13h</h3>
+                    <h3>14h</h3>
+                    <h3>15h</h3>
+                    <h3>16h</h3>
+                    <h3>17h</h3>
+                </div>
+                <div class="lundi mesjours">
+                    <div class="jourl jourEtPlus">
+                        <h3>lundi</h3>
+                        <div class="plus">➕
+                            <!-- <div class="modalTitle">
+                                <p id="modalTitleP">Modal Title</p>
+                            </div> -->
+                            <!-- <div class="repartitionClasse">
+                                <div id="module">
+                                    <label for="">Module :</label>
+                                    <select name="" id="">
+                                        <option value="algo">Choisir un Module</option>
+                                        <option value="algo">ALGO</option>
+                                        <option value="php">PHP</option>
+                                        <option value="python">PYTHON</option>
+                                        <option value="lc">LC</option>
+                                        <option value="">JAVASCRIPT</option>
+                                        <option value="java">JAVA</option>
+                                    </select>
+                                </div>
+                                <div id="enseignant">
+                                    <label for="">Enseignant :</label>
+                                    <select name="" id="">
+                                        <option value="enseignemant">Choisir un enseignant</option>
+                                        <option value="aly">Aly</option>
+                                        <option value="bailla">Bailla</option>
+                                        <option value="ndoye">Ndoye</option>
+                                        <option value="djiby">Djiby</option>
+                                    </select>
+                                </div>
+                                <div id="salle">
+                                    <label for="">Salle :</label>
+                                    <select name="" id="">
+                                        <option value="algo">Choisir un salle</option>
+                                        <option value="salle101">101</option>
+                                        <option value="salle102">102</option>
+                                        <option value="salle103">103</option>
+                                        <option value="salle104">104</option>
+                                        <option value="salle201">201</option>
+                                        <option value="salleincub">incub</option>
+                                    </select>
+                                </div>
+                                <div id="heureDebut">
+                                    <label for="">Heure de Début :</label>
+                                    <select name="" id="">
+                                        <option value="heure">Choisir une Heure</option>
+                                        <option value="h8">8 H</option>
+                                        <option value="h9">9 H</option>
+                                        <option value="h10">10 h</option>
+                                        <option value="h11">11 h</option>
+                                        <option value="h12">12 h</option>
+                                        <option value="h13">13 h</option>
+                                        <option value="h14">14 h</option>
+                                        <option value="h15">15 h</option>
+                                        <option value="h16">16 h</option>
+                                    </select>
+                                </div>
+                                <div id="heureFin">
+                                    <label for="">Heure de Fin :</label>
+                                    <select name="" id="">
+                                        <option value="heure">Choisir une Heure</option>
+                                        <option value="h9">9 H</option>
+                                        <option value="h10">10 h</option>
+                                        <option value="h11">11 h</option>
+                                        <option value="h12">12 h</option>
+                                        <option value="h13">13 h</option>
+                                        <option value="h14">14 h</option>
+                                        <option value="h15">15 h</option>
+                                        <option value="h16">16 h</option>
+                                        <option value="h16">17 h</option>
+                                    </select>
+                                </div>
+                            </div>     -->
+                            <!-- <div id="deuxBoutton">
+                                <button>Ajouter</button>
+                                <button>Annuler</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="courl"></div>
+                </div>
+                <div class="mardi mesjours">
+                    <div class="jourma jourEtPlus">
+                        <h3>mardi</h3>
+                        <div class="plus">➕</div>
+                    </div>
+                    <div class="courma"></div>                
+                </div>
+                <div class="mercredi mesjours">
+                    <div class="jourme jourEtPlus">
+                        <h3>mercredi</h3>
+                        <div class="plus">➕</div>
+                    </div>
+                    <div class="courme"></div>
+                </div>
+                <div class="jeudi mesjours">
+                    <div class="jourj jourEtPlus">
+                        <h3>jeudi</h3>
+                        <div class="plus">➕</div>
+                    </div>
+                    <div class="courj"></div>
+                </div>
+                <div class="vendredi mesjours">
+                    <div class="jourv jourEtPlus">
+                        <h3>vendredi</h3>
+                        <div class="plus">➕</div>
+                    </div>
+                    <div class="courv"></div>
+                </div>
+                <div class="samedi mesjours">
+                    <div class="jours jourEtPlus">
+                        <h3>samedi</h3>
+                        <div class="plus">➕</div>
+                    </div>
+                    <div class="cours"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal center">
+            <div class="modal-container center">
+                <div class="modal-header center"><p>Modal Title</p></div>
+                <div class="modal-main center">
+                    <div>
+                        <label for="">Module</label>
+                        <select name="" id="" class="select-modal"></select>
+                    </div>
+                    <div>
+                        <label for="">Enseignant</label>
+                        <select name="" id="" class="select-modal"></select>
+                    </div>
+                    <div>
+                        <label for="">Salle</label>
+                        <select name="" id="" class="select-modal"></select>
+                    </div>
+                    <div>
+                        <label for="">Heure de Début</label>
+                        <select name="" id="" class="select-modal"></select>
+                    </div>
+                    <div>
+                        <label for="">Heure de Fin</label>
+                        <select name="" id="" class="select-modal"></select>
+                    </div> 
+                </div>
+                <div class="modal-footer center">
+                    <button>Ok</button>
+                    <button>Annuler</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="assets/js/main.js"></script>
+    </body>
+    </html>
