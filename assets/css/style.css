@@ -281,6 +281,7 @@ body {
     width: 85%;
     background-color:slategrey;
     border-radius: 0 20px 20px 0;
+    position: relative;
 }
 .mesjours {
     color: white;
@@ -344,7 +345,7 @@ body {
     height: 100vh;
     background-color: rgba(0,0,0,0.8);
     position: absolute;
-    visibility: hidden;
+    visibility:hidden;
     
 }
 .center {
@@ -387,4 +388,43 @@ body {
     border-radius: 10px;
     background-color: aliceblue;
 }
+#input-cours {
+    display:none;
+}
 /* modal end */
+
+
+/* bouttonOk.addEventListener('click',recupreOk)
+function recupreOk() {
+    selectMod.addEventListener("change", function() {
+        // Effacer la liste des enseignants actuels
+        selectEnsei.innerHTML = "";
+      
+        // Récupérer la valeur sélectionnée
+        const moduleSelected = selectMod.value;
+      
+        // Boucler sur les professeurs pour trouver ceux qui enseignent ce module
+        for (const prof of profs) {
+          if (prof.module.includes(parseInt(moduleSelected))) {
+            // Ajouter l'option à la liste déroulante des enseignants
+            const option = document.createElement("option");
+            option.value = prof.id;
+            option.text = prof.nom;
+            selectEnsei.add(option);
+          }
+        }
+      });
+      
+} */
+
+.course {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
